@@ -1,6 +1,7 @@
 // Define variable
 const inp = document.querySelector('#textInput');
 const taskContainer = document.querySelector('#taskList');
+const superContainer = document.querySelector('#superContainer');
 
 // Local Storage
 callData()
@@ -25,6 +26,7 @@ function addTask() {
             let secondIcon = document.createElement('i');
             let textContent = document.createElement('div');
             let iconContent = document.createElement('div');
+
             // Add Class
             input.type = 'checkbox';
             task.classList.add('task');
@@ -32,8 +34,10 @@ function addTask() {
             iconContent.classList.add('icon-content');
             firstIcon.classList.add(`fa-solid`, `fa-pen-to-square`);
             secondIcon.classList.add(`fa-solid`, `fa-trash-can`);
+
             // Define Values
             span.innerHTML = inp.value;
+
             // Append all elements
             taskContainer.appendChild(task);
             task.appendChild(textContent);
@@ -43,10 +47,19 @@ function addTask() {
             iconContent.appendChild(firstIcon);
             iconContent.appendChild(secondIcon);
         }
-        saveData()
+        saveData();
     }
     inp.value = "";
 }
+
+// Live character limit control
+inp.addEventListener("input", function () {
+    if (inp.value.length > 100) {
+        inp.value = inp.value.substring(0, 100); 
+        superContainer.style.border = "2px solid red"; 
+    } else superContainer.style.border = "2px solid transparent"; 
+});
+
 
 // Define Other Functions
 taskContainer.addEventListener('click', (e) => {
