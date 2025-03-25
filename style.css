@@ -23,10 +23,6 @@ body {
         position: absolute;
         background-color: rgba(0, 0, 0, 0.35);
     }
-
-    .swal2-container {
-        z-index: 9999 !important;
-    }
 }
 
 .super-container {
@@ -34,6 +30,9 @@ body {
     padding: 20px 40px;
     position: relative;
     border-radius: 20px;
+    width: 1144px;
+    height: 700px;
+    border: 2px solid transparent;
     background-color: #FFF;
     box-shadow: 0 0 10px rgb(255, 255, 255);
     .container {
@@ -46,15 +45,19 @@ body {
             }
         }
         .input-content {
+            display: flex;
             margin: 20px 0;
             text-align: center;
+            align-items: center;
             border-radius: 20px;
             background-color: #eaeaea;
+            justify-content: space-between;
 
             input {
                 border: none;
                 outline: none;
                 padding: 10px;
+                width: 100%;
                 background-color: transparent;
                 font: normal 1em Helvetica, sans-serif;
             }
