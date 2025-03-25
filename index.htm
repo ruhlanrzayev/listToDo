@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="@ruhlanrzayev" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="todo list, simple todo, todo, html, css, javascript" />
+    <title>Simple to-do list 2</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="super-container">
+        <div class="container">
+            <div class="top-content">
+                <h1>My To-Do List</h1>
+            </div>
+            <div class="input-content">
+                <input type="text" id="textInput" placeholder="Add your task" />
+                <button onclick="addTask()">Add</button>
+            </div>
+            <div class="task-content" id="taskContent">
+                <div class="task-list" id="taskList">
+                    <!-- <div class="task">
+                        <div class="text-content">
+                            <input type="checkbox" />
+                            <span>Task 1</span>
+                        </div>
+                        <div class="icon-content">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <i class="fa-solid fa-trash-can"></i>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
