@@ -50,6 +50,7 @@ function addTask() {
         saveData();
     }
     inp.value = "";
+    superContainer.style.border = "2px solid transparent"; 
 }
 
 // Live character limit control
