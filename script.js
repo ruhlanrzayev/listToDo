@@ -93,10 +93,10 @@ taskContainer.addEventListener('click', (e) => {
 
 // Save on Local Storage 
 function saveData() {
-    localStorage.setItem("data's", taskContainer.innerHTML);
+    localStorage.setItem("data", taskContainer.innerHTML);
 }
 
 // Call data when opening website
 function callData() {
-    taskContainer.innerHTML = localStorage.getItem("data's")
+    taskContainer.innerHTML = localStorage.getItem("data")
 }
