@@ -10,7 +10,7 @@ document.addEventListener('keydown', (e) => {
 // Define variable
 const inp = document.querySelector('#textInput');
 const taskContainer = document.querySelector('#taskList');
-const superContainer = document.querySelector('#superContainer');
+const tasklistContainer = document.querySelector('#tasklistContainer');
 
 // Local Storage
 callData()
@@ -59,15 +59,15 @@ function addTask() {
         saveData();
     }
     inp.value = "";
-    superContainer.style.border = "2px solid transparent"; 
+    tasklistContainer.style.border = "2px solid transparent"; 
 }
 
 // Live character limit control
 inp.addEventListener("input", function () {
     if (inp.value.length > 75) {
         inp.value = inp.value.substring(0, 75); 
-        superContainer.style.border = "2px solid red"; 
-    } else superContainer.style.border = "2px solid transparent"; 
+        tasklistContainer.style.border = "2px solid red"; 
+    } else tasklistContainer.style.border = "2px solid transparent"; 
 });
 
 
@@ -93,10 +93,10 @@ taskContainer.addEventListener('click', (e) => {
 
 // Save on Local Storage 
 function saveData() {
-    localStorage.setItem("data", taskContainer.innerHTML);
+    localStorage.setItem("data's", taskContainer.innerHTML);
 }
 
 // Call data when opening website
 function callData() {
-    taskContainer.innerHTML = localStorage.getItem("data")
+    taskContainer.innerHTML = localStorage.getItem("data's")
 }
