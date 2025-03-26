@@ -81,7 +81,7 @@ body {
     }
 }
 
-.alt-container {
+#alt-container {
     
     display: flex;
     align-items: center;
