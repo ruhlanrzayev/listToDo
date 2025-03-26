@@ -134,7 +134,8 @@ footer {
 
 /* Task Container CSS */
 .tasklist-container-background {
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     display: flex;
     position: relative;
     align-items: center;
@@ -175,7 +176,7 @@ footer {
     border-radius: 20px;
     position: relative;
     width: 1144px;
-    height: 700px;
+    min-height: 700px;
     border: 2px solid transparent;
     background-color: #FFF;
     box-shadow: 0 0 10px rgb(255, 255, 255);
