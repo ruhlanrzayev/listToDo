@@ -1,0 +1,84 @@
+@media (max-width: 768px) {
+
+    /* Home Container Responsive CSS */
+    .super-container {
+
+        .center-text {
+            
+            p, span {
+                font: normal .9em "Roboto Slab", serif!important;
+                text-align: center;
+
+                span {
+                    font-size: 1em!important;
+                }
+            }
+
+            .getTaskContent {
+                padding: 10px 15px!important;
+            }
+        }
+    }
+
+    #alt-container {
+        display: flex;
+        .first-container, .third-container {
+            display: flex;
+            flex-direction: column-reverse!important;
+            
+            img {
+                width: 100%!important;
+            }
+            p {
+                font-size: .75em;
+            }
+        }
+
+        .second-container {
+            display: flex;
+            flex-direction: column!important;
+
+            img {
+                width: 75%!important;
+            }
+            p {
+                font-size: .8em;
+            }
+        }
+
+    }
+
+    footer {
+        p {
+            font-size: .75em;
+        }
+        a {
+            font-size: .75em;
+        }
+    }
+
+    /* Task Container Responsive CSS */
+
+    .tasklist-container-background {
+        .getback {
+            top: 5px!important;
+            left: 5px!important;
+            padding: 7px!important;
+        }
+    }
+    .tasklist-container {
+        width: 100%!important;
+        height: 80%!important;
+        margin: 40px 20px!important;
+        padding: 10px!important;
+
+        .container {
+
+            .top-content {
+                h1 {
+                    font-size: 1.2em!important;
+                }
+            }
+        }
+    }
+}
